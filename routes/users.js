@@ -17,6 +17,10 @@ async function getNextAppointmentId() {
   return counter.seq;
 }
 
+router.get('test',(req,res)=>{
+  res.send('testing url');
+})
+
 router.post('/register', async (req, res) => {
     console.log("Received data from frontend:", req.body);
 
